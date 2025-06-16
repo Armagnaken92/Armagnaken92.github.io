@@ -29,3 +29,16 @@ section { padding: 4rem 0; }
   font-weight: bold;
   margin-top: 1rem;
 }
+/* Landing-Page-Hero */
+.landing-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f2ec;
+}
+.landing-hero img {
+  max-width: 80%;
+  height: auto;
+  cursor: pointer;
+}
