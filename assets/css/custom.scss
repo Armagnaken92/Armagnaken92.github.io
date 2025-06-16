@@ -1,0 +1,35 @@
+---
+# Front matter aktivieren Sass
+---
+
+@import "minima";
+
+/* 1. Monospaced Google Font einbinden */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+/* 2. Schriftfamilie für Kopf- und Fließtext */
+$body-font-family: 'Cutive Mono', monospace;
+$header-font-family: 'Cutive Mono', monospace;
+
+/* 3. Grundlegende Abstände und Button-Styles */
+section {
+  padding: 4rem 0;
+}
+.hero {
+  background: lighten($color-primary, 35%);
+  text-align: center;
+}
+.about, .products {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.cta .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid $color-primary;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+Add custom.scss for CD: font & layout
