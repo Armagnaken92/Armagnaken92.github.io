@@ -1,13 +1,8 @@
 ---
-layout: home
+layout: landing
 ---
-
-# Willkommen bei Grünwerkatelier
-
-Handgefertigte Yoga-Accessoires aus Thuner Gartenkräutern für Entspannung in jedem Asana.
-
-## Unsere Produkte
-- **Yoga-Augenkissen** mit Lavendel & Leinsamen
-- **Makramé-Mattenhalter** aus robuster Naturfaser
-
-[Zum Shop](https://instagram.com/gruenwerkatelier) • [Über uns](/about)
+<div class="landing-hero">
+  <a href="{{ "/home" | relative_url }}">
+    <img src="{{ "/assets/img/hero-logo.jpg" | relative_url }}" alt="Grünwerkatelier Logo" />
+  </a>
+</div>
