@@ -21,7 +21,7 @@ section { padding: 4rem 0; }
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background: url('{{ "/assets/img/grünwerk_header.png" | relative_url }}') no-repeat center/cover;
+ background: url('{{ "/assets/img/hero-logo.jpg" | relative_url }}') no-repeat center/cover;
 }
 .landing-hero .hero-content {
   background: rgba(255,255,255,0.8);
