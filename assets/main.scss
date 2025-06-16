@@ -10,12 +10,8 @@
 $body-font-family: 'Cutive Mono', monospace;
 $header-font-family: 'Cutive Mono', monospace;
 
-// Sektionen & Button-Stil
+// Globale Sektionen & Button-Stil
 section { padding: 4rem 0; }
-.hero {
-  background: lighten($color-primary, 35%);
-  text-align: center;
-}
 .about, .products {
   max-width: 40rem;
   margin: 0 auto;
@@ -29,17 +25,80 @@ section { padding: 4rem 0; }
   font-weight: bold;
   margin-top: 1rem;
 }
-/* Landing-Page-Hero */
-.landing-hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-   background: url('{{ "/assets/img/grünwerk_header.png" | relative_url }}') 
-              no-repeat center center/cover;
+
+// Standard-Hero (falls du ihn irgendwo brauchst)
+.hero {
+  background: lighten($color-primary, 35%);
+  text-align: center;
 }
+
+// ─────────── Landing-Page-Hero ───────────
+.landing-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* Dein Header-Bild als Hintergrund */
+  background: url('{{ "/assets/img/grünwerk_header.png" | relative_url }}')
+              no-repeat center center/cover;
+  background-size: cover;
+}
+
+// Bilder in der Landing-Section (wenn du klickbare Images willst)
 .landing-hero img {
   max-width: 80%;
   height: auto;
   cursor: pointer;
+}
+
+// ─────────── Fixiertes, transparentes Nav-Bar ───────────
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  padding: 0 2rem;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+// Logo in der Nav
+.nav-logo img {
+  display: block;
+  max-height: 2.5rem;
+}
+
+// Menü rechts anordnen
+.nav-menu {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: $color-primary;
+}
+
+// ─────────── Hero-Content (zentrales Textfeld) ───────────
+.hero-content {
+  text-align: center;
+  color: #333;
+  padding: 0 1rem;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: $header-font-family;
+}
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
