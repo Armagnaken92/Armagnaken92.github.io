@@ -1,13 +1,20 @@
-<header class="site-hero">
+<header class="landing-hero">
   <nav class="site-nav wrapper">
     <a class="nav-logo" href="{{ "/" | relative_url }}">
-      <img src="{{ "/logo.jpg" | relative_url }}" alt="Grünwerkatelier" />
+      <img
+        src="{{ "/assets/img/logo.jpg" | relative_url }}"
+        alt="Grünwerkatelier Logo"
+        width="120"
+      />
     </a>
     <ul class="nav-menu">
       <li><a href="{{ "/" | relative_url }}">Start</a></li>
-      <li><a href="{{ "/about" | relative_url }}">Über uns</a></li>
+      <li><a href="{{ "/about"  | relative_url }}">Über uns</a></li>
+      <li><a href="#products">Produkte</a></li>
+      <li><a href="{{ "/contact" | relative_url }}">Kontakt</a></li>
     </ul>
   </nav>
+
   <div class="hero-content wrapper">
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
