@@ -1,1 +1,32 @@
+---
+# Front matter damit Jekyll Sass kompiliert!
+---
+
+// Import des Minima-Styles
+@import "minima";
+
+// Google Font “Cutive Mono” für Monospaced-CD-Look
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+$body-font-family: 'Cutive Mono', monospace;
+$header-font-family: 'Cutive Mono', monospace;
+
+// Sektionen & Button-Stil
+section { padding: 4rem 0; }
+.hero {
+  background: lighten($color-primary, 35%);
+  text-align: center;
+}
+.about, .products {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.cta .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid $color-primary;
+  border-radius: .25rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+}
 
