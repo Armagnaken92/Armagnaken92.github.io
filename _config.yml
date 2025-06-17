@@ -1,8 +1,11 @@
 title: "Grünwerkatelier"
 description: "Handgefertigte Yoga-Accessoires aus Thuner Gartenkräutern"
-url: "https://gruenwerkatelier.github.io"
+
+# Projekt-Page-Basis-URL
+baseurl: "/gruenwerkatelier.github.io"
+url: "https://armagnaken92.github.io"
+
 theme: minima
 
-# Sass/SCSS: wir legen main.scss direkt unter /assets ab
 sass:
   style: compressed
