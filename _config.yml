@@ -1,11 +1,9 @@
 title: "Grünwerkatelier"
 description: "Handgefertigte Yoga-Accessoires aus Thuner Gartenkräutern"
 
-# Basis-Pfad für Project Pages
+# FÜR EINE ROOT PAGE OHNE UNTERPFAD:
 url: "https://gruenwerkatelier.ch"
-
-# Deine Seiten-URL (für spätere Custom-Domain anpassen)
-url: "https://armagnaken92.github.io"
+baseurl: ""           # ⚠️ sehr wichtig, damit Jekyll nicht mehr automatisch /<reponame> davor packt
 
 theme: minima
 
