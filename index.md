@@ -4,8 +4,15 @@ title: "Grünwerkatelier"
 description: "Handgefertigte Yoga-Accessoires aus Thuner Gartenkräutern"
 ---
 
-<div class="landing-hero">
-  <a href="{{ "/" | relative_url }}">
-    <img src="{{ "/assets/img/hero-logo.jpg" | relative_url }}" alt="Grünwerkatelier Logo" />
-  </a>
-</div>
+<!-- Ab hier dein Seiteninhalt: z.B. About/Produkte-Teaser -->
+<section id="about" class="about">
+### Über Grünwerkatelier  
+Handgefertigt mit Liebe zum Detail aus Thuner Gartenkräutern.
+</section>
+
+<section id="products" class="products">
+### Unsere Produkte  
+- **Yoga-Augenkissen** – Lavendel & Leinsamen  
+- **Makramé-Mattenhalter** – Bio-Jute
+</section>
+****
