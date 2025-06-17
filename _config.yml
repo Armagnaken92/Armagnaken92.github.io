@@ -2,7 +2,7 @@ title: "Grünwerkatelier"
 description: "Handgefertigte Yoga-Accessoires aus Thuner Gartenkräutern"
 
 # Basis-Pfad für Project Pages
-baseurl: "/gruenwerkatelier.github.io"
+url: "https://gruenwerkatelier.ch"
 
 # Deine Seiten-URL (für spätere Custom-Domain anpassen)
 url: "https://armagnaken92.github.io"
